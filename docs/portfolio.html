@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Portfolio | Lawrence Hsiung</title>
+  <meta name="description" content="Engineering portfolio of Lawrence Hsiung — Prototypes, Autonomous Robotics, and Consumer Electronics.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-badge">LH</div>
+        <div class="brand-text">
+          <span class="brand-name">LAWRENCE HSIUNG</span>
+          <span class="brand-sub">SYSTEMS & ELECTRICAL ENGINEER</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="portfolio.html" class="nav-item active-cobalt">PORTFOLIO</a>
+        <a href="blog.html" class="nav-item">BLOG</a>
+        <a href="resume.html" class="nav-item">RÉSUMÉ</a>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/lhsiung" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">in</a>
+        <a href="https://instagram.com/film.foto.lan" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Film Photography (@film.foto.lan)">📷</a>
+        <a href="https://github.com/lawrencehsiung/lawrencejhsiung" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">gh</a>
+        <a href="mailto:ljhlucidshowcars@gmail.com" class="social-icon-btn" title="Email Contact">✉</a>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-item">HOME</a>
+      <a href="portfolio.html" class="nav-item active-cobalt">PORTFOLIO</a>
+      <a href="blog.html" class="nav-item">BLOG</a>
+      <a href="resume.html" class="nav-item">RÉSUMÉ</a>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="main-wrapper">
+
+    <!-- PAGE HEADING -->
+    <div class="section-heading">
+      <div class="heading-title-row">
+        <span class="heading-glyph glyph-square"></span>
+        <h1 class="heading-title">Engineering Portfolio</h1>
+      </div>
+      <p class="heading-subtitle">Showcasing concept vehicle architectures, autonomous agriculture robotics, acoustic testing, and wearable hardware.</p>
+      <div class="heading-line cobalt"></div>
+    </div>
+
+    <!-- CATEGORY FILTER BUTTONS -->
+    <div class="filter-bar">
+      <button class="filter-btn portfolio-filter-btn active" data-filter="all">ALL PROJECTS (4)</button>
+      <button class="filter-btn portfolio-filter-btn" data-filter="ev">EV & PROTOTYPING</button>
+      <button class="filter-btn portfolio-filter-btn" data-filter="robotics">AUTONOMOUS ROBOTICS</button>
+      <button class="filter-btn portfolio-filter-btn" data-filter="audio">AUDIO & COMMUNICATIONS</button>
+      <button class="filter-btn portfolio-filter-btn" data-filter="wearables">WEARABLES</button>
+    </div>
+
+    <!-- PROJECTS LIST -->
+
+    <!-- 1. Lucid Motors -->
+    <article class="project-card" data-category="ev">
+      <div class="project-card-header" style="background-color: var(--cobalt);">
+        <div class="project-header-left">
+          <div class="project-logo-box">
+            <img src="images/lucidlogo.png" alt="Lucid Motors logo">
+          </div>
+          <div>
+            <div class="project-title">LUCID MOTORS</div>
+            <div class="project-role-meta">Prototypes and Concepts Systems Engineer • 2023 — Present</div>
+          </div>
+        </div>
+        <div class="bauhaus-badge" style="background-color: var(--ochre); color: var(--ink);">EV & Prototyping</div>
+      </div>
+      <div class="project-body">
+        <p class="project-summary">
+          Architecting, building, and validating next-generation electrical and compute platforms for advanced concept vehicles, showcar fleet deployments, and autonomous vehicle integration.
+        </p>
+        <div class="project-section-subhead">KEY CONTRIBUTIONS & IMPACT</div>
+        <ul class="project-highlights">
+          <li>Architected and integrated complete low-voltage electrical systems for the Lucid Cosmos and Earth concept platforms.</li>
+          <li>Designed custom rapid-prototyping wiring harnesses, solid-state power distribution modules, and interactive show controls.</li>
+          <li>Integrated sensor and compute payloads for autonomous robotaxi demonstrators including Lucid Gravity x Uber x Nuro.</li>
+          <li>Developed diagnostic bring-up workflows for multi-vehicle show fleets across global unveilings and VIP demonstrations.</li>
+        </ul>
+        <div class="project-section-subhead">GALLERY ARTIFACTS (CLICK TO ZOOM)</div>
+        <div class="project-gallery-grid">
+          <div class="gallery-thumbnail" data-src="images/cosmosint.avif" data-title="Lucid Cosmos & Earth Concept" data-desc="Integrated low-voltage electrical systems, interior ambient controls, and digital interface power architecture." data-company="Lucid Motors">
+            <img src="images/cosmosint.avif" alt="Lucid Cosmos Concept" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Cosmos & Earth Concept 🔍</div>
+          </div>
+          <div class="gallery-thumbnail" data-src="images/lucidlunar.png" data-title="Lucid Lunar Robotaxi Concept" data-desc="Autonomous vehicle concept packaging, sensor compute integration, and redundant power distribution design." data-company="Lucid Motors">
+            <img src="images/lucidlunar.png" alt="Lucid Lunar Concept" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Lunar Robotaxi Concept 🔍</div>
+          </div>
+          <div class="gallery-thumbnail" data-src="images/ubergravity.avif" data-title="Lucid Gravity x Uber x Nuro Concept" data-desc="Hardware integration and electrical interface development for autonomous ride-hail and delivery fleets." data-company="Lucid Motors">
+            <img src="images/ubergravity.avif" alt="Uber Gravity Concept" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Uber x Nuro Robotaxi 🔍</div>
+          </div>
+        </div>
+        <div class="tags-row">
+          <span class="bauhaus-badge">EV Architecture</span>
+          <span class="bauhaus-badge">Showcar Systems</span>
+          <span class="bauhaus-badge">Rapid Prototyping</span>
+          <span class="bauhaus-badge">CAN / LIN</span>
+          <span class="bauhaus-badge">Hardware Integration</span>
+          <span class="bauhaus-badge">Power Distribution</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Farmwise Labs -->
+    <article class="project-card" data-category="robotics">
+      <div class="project-card-header" style="background-color: var(--sage);">
+        <div class="project-header-left">
+          <div class="project-logo-box">
+            <img src="images/farmwise.png" alt="Farmwise Labs logo">
+          </div>
+          <div>
+            <div class="project-title">FARMWISE LABS</div>
+            <div class="project-role-meta">Product & Systems Engineer • 2021 — 2023</div>
+          </div>
+        </div>
+        <div class="bauhaus-badge" style="background-color: var(--ochre); color: var(--ink);">Autonomous Robotics</div>
+      </div>
+      <div class="project-body">
+        <p class="project-summary">
+          Designed and executed end-to-end hardware test methodologies for the Vulcan smart autonomous weeding robot, optimizing sub-millimeter actuator accuracy and field reliability under extreme agricultural conditions.
+        </p>
+        <div class="project-section-subhead">KEY CONTRIBUTIONS & IMPACT</div>
+        <ul class="project-highlights">
+          <li>Spearheaded hardware validation protocols for the Vulcan smart agricultural weeding robot across harsh farming environments.</li>
+          <li>Engineered the Intelligent Power System (IPS Box) for robust power routing, computer vision compute cooling, and actuator control.</li>
+          <li>Formulated failure mode analysis (FMEA) for sub-millimeter precision camera and mechanical cutting blade mechanisms.</li>
+          <li>Conducted extensive field testing in California and Arizona crop fields (110°F+ heat, high dust/vibration) to ensure 99.9% uptime.</li>
+        </ul>
+        <div class="project-section-subhead">GALLERY ARTIFACTS (CLICK TO ZOOM)</div>
+        <div class="project-gallery-grid">
+          <div class="gallery-thumbnail" data-src="images/farmwisevulcan.jpg" data-title="Vulcan Smart Weeding Robot" data-desc="Sub-millimeter autonomous agricultural implement combining computer vision with high-speed micro-actuators." data-company="Farmwise Labs">
+            <img src="images/farmwisevulcan.jpg" alt="Farmwise Vulcan" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Vulcan Smart Weeder 🔍</div>
+          </div>
+          <div class="gallery-thumbnail" data-src="images/ipsbox.png" data-title="Intelligent Power System (IPS Box)" data-desc="Ruggedized compute and power distribution enclosure designed to withstand extreme dust, heat, and vibration." data-company="Farmwise Labs">
+            <img src="images/ipsbox.png" alt="Farmwise IPS Box" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">IPS Box Enclosure 🔍</div>
+          </div>
+        </div>
+        <div class="tags-row">
+          <span class="bauhaus-badge">Autonomous Robotics</span>
+          <span class="bauhaus-badge">Ag-Tech</span>
+          <span class="bauhaus-badge">Hardware Validation</span>
+          <span class="bauhaus-badge">Embedded Systems</span>
+          <span class="bauhaus-badge">Field Testing</span>
+          <span class="bauhaus-badge">FMEA</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Zoom -->
+    <article class="project-card" data-category="audio">
+      <div class="project-card-header" style="background-color: var(--vermilion);">
+        <div class="project-header-left">
+          <div class="project-logo-box">
+            <img src="images/zlogo.png" alt="Zoom logo">
+          </div>
+          <div>
+            <div class="project-title">ZOOM VIDEO COMMUNICATIONS</div>
+            <div class="project-role-meta">Audio Test Engineer • 2020 — 2021</div>
+          </div>
+        </div>
+        <div class="bauhaus-badge" style="background-color: var(--ochre); color: var(--ink);">Audio & Communications</div>
+      </div>
+      <div class="project-body">
+        <p class="project-summary">
+          Validated, tested, and certified enterprise and consumer audio hardware devices for the Zoom Rooms and Zoom Phone ecosystem.
+        </p>
+        <div class="project-section-subhead">KEY CONTRIBUTIONS & IMPACT</div>
+        <ul class="project-highlights">
+          <li>Executed acoustic and electrical characterization tests inside anechoic chambers for microphones, speakers, and DSP processors.</li>
+          <li>Automated Zoom Hardware Certification test suites in Python, reducing partner testing turnaround from weeks to days.</li>
+          <li>Collaborated with global Tier-1 hardware partners (Logitech, Poly, Crestron, Yealink) to resolve AEC (Acoustic Echo Cancellation) anomalies.</li>
+        </ul>
+        <div class="project-section-subhead">GALLERY ARTIFACTS (CLICK TO ZOOM)</div>
+        <div class="project-gallery-grid">
+          <div class="gallery-thumbnail" data-src="images/zcert3.webp" data-title="Zoom Hardware Certification Platform" data-desc="Acoustic characterization, frequency response testing, and compliance certification for Zoom-certified hardware devices." data-company="Zoom Video Communications">
+            <img src="images/zcert3.webp" alt="Zoom Certification" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Hardware Certification Platform 🔍</div>
+          </div>
+        </div>
+        <div class="tags-row">
+          <span class="bauhaus-badge">Acoustic Testing</span>
+          <span class="bauhaus-badge">Hardware Certification</span>
+          <span class="bauhaus-badge">Python Test Automation</span>
+          <span class="bauhaus-badge">DSP / AEC</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Fitbit -->
+    <article class="project-card" data-category="wearables">
+      <div class="project-card-header" style="background-color: var(--deep-ochre);">
+        <div class="project-header-left">
+          <div class="project-logo-box">
+            <img src="images/fitbitlogowhite.png" alt="Fitbit logo">
+          </div>
+          <div>
+            <div class="project-title">FITBIT</div>
+            <div class="project-role-meta">Electrical Engineering Technician • 2018 — 2020</div>
+          </div>
+        </div>
+        <div class="bauhaus-badge" style="background-color: var(--cobalt); color: #FFF;">Wearables & Consumer Tech</div>
+      </div>
+      <div class="project-body">
+        <p class="project-summary">
+          Conducted hardware validation, circuit characterization, and failure analysis for Fitbit Versa and Inspire smartwatch product lines.
+        </p>
+        <div class="project-section-subhead">KEY CONTRIBUTIONS & IMPACT</div>
+        <ul class="project-highlights">
+          <li>Built automated test benches for battery longevity, display power consumption, and optical sensor (PPG/SpO2) validation on Versa 1, 2, & 3.</li>
+          <li>Performed component-level failure analysis (FA) on prototype PCBAs using oscilloscopes, spectrum analyzers, and micro-probing.</li>
+          <li>Executed electrical stress testing on the Inspire & Inspire HR wearable trackers to ensure consumer reliability standards.</li>
+        </ul>
+        <div class="project-section-subhead">GALLERY ARTIFACTS (CLICK TO ZOOM)</div>
+        <div class="project-gallery-grid">
+          <div class="gallery-thumbnail" data-src="images/versa2.jpg" data-title="Fitbit Versa 1, 2, & 3 Validation" data-desc="Electrical validation test bench for sensor telemetry, power management ICs, and display controller characterization." data-company="Fitbit">
+            <img src="images/versa2.jpg" alt="Fitbit Versa Test Bench" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Versa Series Test Bench 🔍</div>
+          </div>
+          <div class="gallery-thumbnail" data-src="images/inspirehr.webp" data-title="Fitbit Inspire HR Validation Testing" data-desc="Optical heart rate sensor testing and reliability verification under dynamic environmental stress conditions." data-company="Fitbit">
+            <img src="images/inspirehr.webp" alt="Fitbit Inspire HR" class="gallery-thumb-img">
+            <div class="gallery-thumb-caption">Inspire HR Optical Sensor 🔍</div>
+          </div>
+        </div>
+        <div class="tags-row">
+          <span class="bauhaus-badge">Consumer Electronics</span>
+          <span class="bauhaus-badge">Failure Analysis (FA)</span>
+          <span class="bauhaus-badge">PCB Bring-up</span>
+          <span class="bauhaus-badge">Battery Characterization</span>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div id="modal-header-title" class="modal-header-title">PROJECT PREVIEW</div>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-image-wrap">
+        <img id="modal-img" src="" alt="Modal preview">
+      </div>
+      <div class="modal-footer">
+        <div id="modal-title" class="modal-caption-title"></div>
+        <div id="modal-desc" class="modal-caption-desc"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-stripe">
+      <div class="stripe-red"></div>
+      <div class="stripe-yellow"></div>
+      <div class="stripe-blue"></div>
+      <div class="stripe-green"></div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>LAWRENCE HSIUNG</h4>
+        <p>Multidisciplinary Systems & Electrical Engineer.<br>Specializing in hardware prototyping, EV systems, and autonomous robotics.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog & Essays</a></li>
+          <li><a href="resume.html">Curriculum Vitae</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <div class="footer-social-row">
+          <a href="https://linkedin.com/in/lhsiung" target="_blank" class="social-icon-btn" title="LinkedIn">in</a>
+          <a href="https://instagram.com/film.foto.lan" target="_blank" class="social-icon-btn" title="Instagram">📷</a>
+          <a href="https://github.com/lawrencehsiung/lawrencejhsiung" target="_blank" class="social-icon-btn" title="GitHub">gh</a>
+          <a href="mailto:ljhlucidshowcars@gmail.com" class="social-icon-btn" title="Email">✉</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 LAWRENCE HSIUNG — CRAFTED IN INTUITIVE BAUHAUS STYLE
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

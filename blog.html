@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essays & Insights | Lawrence Hsiung</title>
+  <meta name="description" content="Technical blog and engineering essays by Lawrence Hsiung on EV systems, autonomous robotics validation, and analog film photography.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-badge">LH</div>
+        <div class="brand-text">
+          <span class="brand-name">LAWRENCE HSIUNG</span>
+          <span class="brand-sub">SYSTEMS & ELECTRICAL ENGINEER</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="portfolio.html" class="nav-item">PORTFOLIO</a>
+        <a href="blog.html" class="nav-item active-ochre">BLOG</a>
+        <a href="resume.html" class="nav-item">RÉSUMÉ</a>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/lhsiung" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">in</a>
+        <a href="https://instagram.com/film.foto.lan" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Film Photography (@film.foto.lan)">📷</a>
+        <a href="https://github.com/lawrencehsiung/lawrencejhsiung" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">gh</a>
+        <a href="mailto:ljhlucidshowcars@gmail.com" class="social-icon-btn" title="Email Contact">✉</a>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-item">HOME</a>
+      <a href="portfolio.html" class="nav-item">PORTFOLIO</a>
+      <a href="blog.html" class="nav-item active-ochre">BLOG</a>
+      <a href="resume.html" class="nav-item">RÉSUMÉ</a>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="main-wrapper">
+
+    <!-- BLOG LIST VIEW CONTAINER -->
+    <div id="blog-list-section">
+      <!-- PAGE HEADING -->
+      <div class="section-heading">
+        <div class="heading-title-row">
+          <span class="heading-glyph glyph-circle"></span>
+          <h1 class="heading-title">Engineering & Analog Essays</h1>
+        </div>
+        <p class="heading-subtitle">Technical writing on electric vehicle architecture, autonomous robotics testing, and film photography.</p>
+        <div class="heading-line vermilion"></div>
+      </div>
+
+      <!-- FILTER & SEARCH BAR -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-bottom: 32px;">
+        <div class="filter-bar" style="margin-bottom: 0;">
+          <button class="filter-btn blog-filter-btn active" data-filter="all">ALL ESSAYS</button>
+          <button class="filter-btn blog-filter-btn" data-filter="systems">SYSTEMS ENGINEERING</button>
+          <button class="filter-btn blog-filter-btn" data-filter="robotics">AUTONOMOUS TECH</button>
+          <button class="filter-btn blog-filter-btn" data-filter="film">FILM PHOTOGRAPHY</button>
+          <button class="filter-btn blog-filter-btn" data-filter="hardware">HARDWARE & VALIDATION</button>
+        </div>
+
+        <input type="text" id="blog-search" class="search-input" placeholder="Search essays by keyword...">
+      </div>
+
+      <!-- BLOG GRID -->
+      <div class="blog-grid">
+
+        <!-- Post 1 -->
+        <article class="blog-card" data-category="systems" data-article-id="ev-showcar-electrical-architecture">
+          <img src="images/cosmosint.avif" alt="Lucid Cosmos Interior" class="blog-card-img">
+          <div class="blog-card-content">
+            <div class="blog-meta-row">
+              <span class="bauhaus-badge" style="background-color: rgba(29, 53, 87, 0.15);">Systems Engineering</span>
+              <span style="font-size: 12px; font-weight: 700; color: var(--muted);">6 min read • Aug 2026</span>
+            </div>
+            <h2 class="blog-card-title">Architecting Low-Voltage Electrical Systems for Concept Showcars</h2>
+            <p class="blog-card-desc">Balancing rapid iterative prototyping cycles with production-grade reliability on high-visibility automotive demonstrators.</p>
+            <div class="blog-card-footer">
+              <span class="bauhaus-badge">#EV Systems</span>
+              <span class="read-link">READ ESSAY →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card" data-category="robotics" data-article-id="field-testing-autonomous-robots">
+          <img src="images/farmwisevulcan.jpg" alt="Farmwise Vulcan Smart Weeder" class="blog-card-img">
+          <div class="blog-card-content">
+            <div class="blog-meta-row">
+              <span class="bauhaus-badge" style="background-color: rgba(42, 157, 143, 0.15);">Autonomous Tech</span>
+              <span style="font-size: 12px; font-weight: 700; color: var(--muted);">8 min read • Jul 2026</span>
+            </div>
+            <h2 class="blog-card-title">Field-Testing Autonomous Robots in Harsh Agricultural Realities</h2>
+            <p class="blog-card-desc">Why computer vision algorithms and micro-actuators behave very differently in 105°F Arizona dust than in the pristine lab.</p>
+            <div class="blog-card-footer">
+              <span class="bauhaus-badge">#Robotics</span>
+              <span class="read-link">READ ESSAY →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card" data-category="film" data-article-id="film-photography-and-systems-engineering">
+          <img src="images/me.jpeg" alt="Analog Photography" class="blog-card-img">
+          <div class="blog-card-content">
+            <div class="blog-meta-row">
+              <span class="bauhaus-badge" style="background-color: rgba(230, 57, 70, 0.15);">Film Photography</span>
+              <span style="font-size: 12px; font-weight: 700; color: var(--muted);">5 min read • May 2026</span>
+            </div>
+            <h2 class="blog-card-title">The Mechanical Discipline of Film Photography: An Engineer's Perspective</h2>
+            <p class="blog-card-desc">What mechanical escapement shutters, optical grain, and chemical processes teach us about modern systems engineering.</p>
+            <div class="blog-card-footer">
+              <span class="bauhaus-badge">#Film Optics</span>
+              <span class="read-link">READ ESSAY →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-card" data-category="hardware" data-article-id="failure-analysis-wearables">
+          <img src="images/versa2.jpg" alt="Wearable Hardware Validation" class="blog-card-img">
+          <div class="blog-card-content">
+            <div class="blog-meta-row">
+              <span class="bauhaus-badge" style="background-color: rgba(233, 196, 106, 0.25);">Hardware & Validation</span>
+              <span style="font-size: 12px; font-weight: 700; color: var(--muted);">7 min read • Mar 2026</span>
+            </div>
+            <h2 class="blog-card-title">Failure Mode Analysis in Wearable Consumer Hardware</h2>
+            <p class="blog-card-desc">Uncovering subtle electrical shorts, battery degradation modes, and optical sensor anomalies on micro-scale PCBAs.</p>
+            <div class="blog-card-footer">
+              <span class="bauhaus-badge">#Wearables</span>
+              <span class="read-link">READ ESSAY →</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div id="no-essays-msg" style="display: none; text-align: center; padding: 48px; background-color: var(--surface); border: var(--border);">
+        <p style="font-weight: 900; font-size: 16px;">NO ESSAYS FOUND</p>
+        <p style="color: var(--muted); font-size: 14px; margin-top: 6px;">Try searching for a different keyword or selecting another category.</p>
+      </div>
+    </div>
+
+    <!-- BLOG ARTICLE READER VIEW (DYNAMICALLY ACTIVATED) -->
+    <div id="blog-reader-section" style="display: none;">
+      <div class="article-reader">
+        <div class="back-btn-row">
+          <button id="back-to-blog-btn" class="bauhaus-btn btn-outline">← Back to All Essays</button>
+        </div>
+
+        <!-- Article 1 Content -->
+        <div id="article-ev-showcar-electrical-architecture" class="article-content" style="display: none;">
+          <div class="article-header">
+            <span class="bauhaus-badge" style="background-color: var(--vermilion); color: #FFF;">Systems Engineering</span>
+            <span style="font-size: 13px; font-weight: 700; color: var(--muted); margin-left: 12px;">Aug 2026 • 6 min read</span>
+            <h1 class="article-title">Architecting Low-Voltage Electrical Systems for Concept Showcars</h1>
+            <p class="article-subtitle">Balancing rapid iterative design cycles with production-grade reliability on high-visibility automotive demonstrators.</p>
+          </div>
+          <div class="article-divider"></div>
+          <img src="images/cosmosint.avif" alt="Cosmos Interior Architecture" class="article-cover">
+          
+          <div class="article-section">
+            <h2 class="article-section-title">The Showcar Paradigm: Speed vs. Robustness</h2>
+            <p class="article-section-body">Concept showcars occupy a unique intersection in automotive engineering. Unlike production vehicles that benefit from multi-year validation cycles, concept vehicles demand ultra-rapid turnaround while operating under unforgiving public scrutiny. If an interior ambient lighting rail flickers or a digital cluster drops CAN frames during a global live unveiling, there is no second take.
+
+When architecting low-voltage (12V/48V) electrical topologies for showcars like the Lucid Cosmos and Earth platforms, the primary objective is modular decoupling: creating power and communication distribution blocks that can be easily modified without cascading failures across the vehicle network.</p>
+            <div class="article-callout">
+              Key Rule: In prototype builds, isolate critical vehicle state machines from non-critical experiential lighting and infotainment loads using dedicated solid-state power switches.
+            </div>
+          </div>
+
+          <div class="article-section">
+            <h2 class="article-section-title">Modular Harnessing & Wire Routing</h2>
+            <p class="article-section-body">Traditional automotive harnesses are wrapped into rigid, irreversible bundles with complex overmolds. For rapid prototypes, we adopt a modular backbone strategy:
+
+1. Central Power & Logic Hub: A custom enclosure housing solid-state e-fuses, CAN/LIN gateway routers, and microcontroller breakout boards.
+2. Sub-System Runs: Quick-disconnect Deutsche and Amphenol connectors routing to doors, center consoles, and roof modules.
+3. Dynamic Diagnostics: Built-in current sense telemetry reporting real-time draw per channel over USB/Ethernet to diagnostic laptops.</p>
+          </div>
+
+          <div class="article-section">
+            <h2 class="article-section-title">Tackling Ground Loops & EMI in Tight Enclosures</h2>
+            <p class="article-section-body">In concept interiors, high-density RGB LED drivers, motorized displays, and inductive chargers sit in close proximity to sensitive low-signal sensor lines. Establishing a strict star-grounding architecture and using twisted shielded pairs for all differential communication lines prevents unexpected audio hum or serial bus corruption.</p>
+            <div class="article-callout">
+              A clean wiring harness is not just aesthetic—it is the best debugging tool you have at 2:00 AM before auto show load-in.
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 Content -->
+        <div id="article-field-testing-autonomous-robots" class="article-content" style="display: none;">
+          <div class="article-header">
+            <span class="bauhaus-badge" style="background-color: var(--sage); color: #FFF;">Autonomous Tech</span>
+            <span style="font-size: 13px; font-weight: 700; color: var(--muted); margin-left: 12px;">Jul 2026 • 8 min read</span>
+            <h1 class="article-title">Field-Testing Autonomous Robots in Harsh Agricultural Realities</h1>
+            <p class="article-subtitle">Why computer vision algorithms and micro-actuators behave very differently in 105°F Arizona dust than in the lab.</p>
+          </div>
+          <div class="article-divider"></div>
+          <img src="images/farmwisevulcan.jpg" alt="Farmwise Vulcan Smart Weeder" class="article-cover">
+          
+          <div class="article-section">
+            <h2 class="article-section-title">The Gap Between Bench & Field</h2>
+            <p class="article-section-body">In the laboratory, power supplies deliver pristine 24.00V DC, temperatures hover at a comfortable 72°F, and cameras capture perfectly lit targets against clean backgrounds. In the crop fields of Salinas or Yuma, the reality is starkly different: fine silicate dust penetrates standard IP ratings, ambient ground temperatures exceed 115°F, and high-frequency tractor vibrations shake connector pins loose.</p>
+          </div>
+
+          <div class="article-section">
+            <h2 class="article-section-title">Engineering the IPS Box (Intelligent Power System)</h2>
+            <p class="article-section-body">During our development of the Farmwise Vulcan smart weeding robot, one of our critical milestones was designing the Intelligent Power System (IPS Box). The system had to manage power delivery to heavy hydraulic solenoids, high-speed camera strobe arrays, and onboard compute modules while enduring severe mechanical shocks.</p>
+            <div class="article-callout">
+              Thermal throttling in agricultural robotics does not just slow down compute—it causes latency spikes that lead to mechanical blades clipping crops instead of weeds.
+            </div>
+          </div>
+
+          <div class="article-section">
+            <h2 class="article-section-title">Test Strategies That Actually Prevent Field Disasters</h2>
+            <p class="article-section-body">Through hundreds of hours of field trials, we developed a 3-tier validation checklist:
+
+• Thermal Soak & Shake: Subjecting full PCBA enclosures to thermal cycling while undergoing multi-axis vibration testing.
+• Brownout Simulation: Testing transient load drops when all cutting actuators fire simultaneously under low alternator output.
+• Redundant Watchdogs: Implementing independent hardware watchdog ICs that safely retract cutting blades within 15 milliseconds if compute heartbeats stall.</p>
+          </div>
+        </div>
+
+        <!-- Article 3 Content -->
+        <div id="article-film-photography-and-systems-engineering" class="article-content" style="display: none;">
+          <div class="article-header">
+            <span class="bauhaus-badge" style="background-color: var(--vermilion); color: #FFF;">Film Photography</span>
+            <span style="font-size: 13px; font-weight: 700; color: var(--muted); margin-left: 12px;">May 2026 • 5 min read</span>
+            <h1 class="article-title">The Mechanical Discipline of Film Photography: An Engineer's Perspective</h1>
+            <p class="article-subtitle">What mechanical shutters, optical grain, and chemical chemistry teach us about modern systems engineering.</p>
+          </div>
+          <div class="article-divider"></div>
+          <img src="images/me.jpeg" alt="Film Photography Profile" class="article-cover">
+          
+          <div class="article-section">
+            <h2 class="article-section-title">The Tangible Feedback of Physical Systems</h2>
+            <p class="article-section-body">In modern software and digital electronics, feedback loops are instantaneous and virtually infinite. If a line of code has a bug, you recompile. If a digital exposure is slightly underexposed, you push shadows in Lightroom by 3 stops with zero penalty.
+
+Analog film photography enforces the opposite discipline: you have 36 exposures per roll (or 10 on medium format 6x7), a purely mechanical shutter calibrated by clockwork escapements, and chemical emulsion that permanently records every decision you make.</p>
+          </div>
+
+          <div class="article-section">
+            <h2 class="article-section-title">Constraints Breed Deliberate Engineering</h2>
+            <p class="article-section-body">Operating a manual mechanical camera requires calculating exposure triangles, evaluating lighting dynamic range, and checking depth of field before cocking the shutter. This exact mindset translates directly to hardware engineering:
+
+• Respecting Physical Tolerances: Understanding thermal expansion in metal gears mirrors analyzing PCB trace thermal limits.
+• Deliberate Architecture: Committing to a design only after measuring and double-checking assumptions, rather than relying on rapid trial-and-error.</p>
+            <div class="article-callout">
+              When every exposure carries a tangible physical cost, you learn to observe deeply before taking action.
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 Content -->
+        <div id="article-failure-analysis-wearables" class="article-content" style="display: none;">
+          <div class="article-header">
+            <span class="bauhaus-badge" style="background-color: var(--ochre); color: var(--ink);">Hardware & Validation</span>
+            <span style="font-size: 13px; font-weight: 700; color: var(--muted); margin-left: 12px;">Mar 2026 • 7 min read</span>
+            <h1 class="article-title">Failure Mode Analysis in Wearable Consumer Hardware</h1>
+            <p class="article-subtitle">Uncovering subtle electrical shorts, battery degradation modes, and optical sensor anomalies on micro-scale PCBAs.</p>
+          </div>
+          <div class="article-divider"></div>
+          <img src="images/versa2.jpg" alt="Wearable Hardware Validation" class="article-cover">
+          
+          <div class="article-section">
+            <h2 class="article-section-title">The Unforgiving Constraints of Wearable Electronics</h2>
+            <p class="article-section-body">Designing wearable electronics like the Fitbit Versa and Inspire series involves packing multi-core processors, Bluetooth transceivers, optical PPG sensor arrays, and LiPo battery protection circuits into a chassis smaller than a matchbox. With components spaced fractions of a millimeter apart, traditional probing is impossible without specialized micro-station test jigs.</p>
+          </div>
+
+          <div class="article-section">
+            <h2 class="article-section-title">Hunting Phantom Battery Drains</h2>
+            <p class="article-section-body">One of the most elusive failure modes in consumer wearables is quiescent current leakage (sub-microamp parasitic drain). When a customer reports a smartwatch dying in 18 hours instead of 5 days, the culprit is often a single capacitor with microscopic dendritic growth or a PMIC buck converter failing to enter ultra-low-power sleep mode.</p>
+            <div class="article-callout">
+              Automating multi-channel micro-ammeter data logging over 72-hour discharge cycles is the only reliable way to pinpoint sporadic wake-up interrupts.
+            </div>
+          </div>
+        </div>
+
+        <!-- Author Bio Card -->
+        <div class="author-card">
+          <img src="images/me.jpeg" alt="Lawrence Hsiung" class="author-avatar">
+          <div>
+            <div style="font-size: 14px; font-weight: 900; letter-spacing: 0.8px;">WRITTEN BY LAWRENCE HSIUNG</div>
+            <p style="font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.4;">
+              Systems & Electrical Engineer @ Lucid Motors. Specializing in vehicle low-voltage architectures, autonomous robotics testing, and analog film photography.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 32px;">
+          <button onclick="document.getElementById('back-to-blog-btn').click();" class="bauhaus-btn btn-outline">← All Essays</button>
+          <a href="portfolio.html" class="bauhaus-btn btn-primary">View Portfolio →</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-stripe">
+      <div class="stripe-red"></div>
+      <div class="stripe-yellow"></div>
+      <div class="stripe-blue"></div>
+      <div class="stripe-green"></div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>LAWRENCE HSIUNG</h4>
+        <p>Multidisciplinary Systems & Electrical Engineer.<br>Specializing in hardware prototyping, EV systems, and autonomous robotics.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog & Essays</a></li>
+          <li><a href="resume.html">Curriculum Vitae</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <div class="footer-social-row">
+          <a href="https://linkedin.com/in/lhsiung" target="_blank" class="social-icon-btn" title="LinkedIn">in</a>
+          <a href="https://instagram.com/film.foto.lan" target="_blank" class="social-icon-btn" title="Instagram">📷</a>
+          <a href="https://github.com/lawrencehsiung/lawrencejhsiung" target="_blank" class="social-icon-btn" title="GitHub">gh</a>
+          <a href="mailto:ljhlucidshowcars@gmail.com" class="social-icon-btn" title="Email">✉</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 LAWRENCE HSIUNG — CRAFTED IN INTUITIVE BAUHAUS STYLE
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
